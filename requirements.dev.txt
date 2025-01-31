@@ -1,15 +1,20 @@
-isort
 # сортирует импорты в проекте
-autoflake
+isort
+
 # для удаления неиспользуемых импортов (в нашем случае)
+autoflake
+
+# форматирование кода
 black
-# форматируем код
-pyupgrade
+
 # приводим его к последней версии
-reorder-python-imports
+pyupgrade
+
 # делаем красивые импорты
-yesqa
+reorder-python-imports
+
 # удаляем неиспользуемые noqa комментарии (для линтеров)
+yesqa
 
 # линтеры
 flake8
@@ -34,8 +39,17 @@ flake8-string-format
 flake8-todo
 flake8-unused-arguments
 
+# проверка типов
 mypy
 
-pytest
-pytest_asyncio
-httpx
+# анализатор
+pylint
+
+# поиска уязвимостей
+bandit
+
+# анализ сложности кода
+radon
+
+# поиск неиспользуемого кода
+vulture
